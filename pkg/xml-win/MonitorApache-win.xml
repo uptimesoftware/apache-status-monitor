@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc"
+	xmlns="http://www.uptimesoftware.com/erdc/erdc"
+	xmlns:upt="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="other">
+	<class>Apache Status</class>
+	<exec>com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner</exec>
+	<elements>
+		<element name="process" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>scripts/MonitorApacheStatus/MonitorApache.bat</default_value>
+			<short_description>Script Name</short_description>
+			<long_description>Name of the script/binary/process to be executed by up.time </long_description>
+			<validation_rule>
+				<alphanumeric/>
+			</validation_rule>
+			<error_message>
+				<alphanumeric>required field</alphanumeric>
+			</error_message>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		<element name="apache_port" parameter_type="input" data_type="integer" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>80</default_value>
+			<short_description>Port to Apache server status</short_description>
+			<long_description>Port to Apache server status. Example: 80 or 8080</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name="status_url_path" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+			<control_options> size:40 </control_options>
+			<default_value>/server-status</default_value>
+			<short_description>URL to server status</short_description>
+			<long_description>Example: /server-status</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<string/>
+			</gui_type>
+		</element>
+		
+		
+		
+		<element name='TotalAccesses' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Total Accesses Since Daemon Restart</short_description>
+			<long_description>Total Accesses Since Daemon Restart</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='TotalkBytes' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Total kBytes Since Daemon Restart</short_description>
+			<long_description>Total kBytes Since Daemon Restart</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='CPULoad' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>CPU Load incurred by HTTP Daemon</short_description>
+			<long_description>CPU Load incurred HTTP Daemon</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='Uptime' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Uptime for the HTTP Daemon</short_description>
+			<long_description>Uptime for the HTTP Daemon</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='ReqPerSec' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Requests Per Second</short_description>
+			<long_description>Requests Per Second</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='BytesPerSec' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Bytes Served Per Second</short_description>
+			<long_description>Bytes Served Per Second</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='BytesPerReq' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Bytes Served Per Request</short_description>
+			<long_description>Bytes Served Per Request</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='BusyWorkers' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Busy Worker Processes</short_description>
+			<long_description>Busy Worker Processes</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name='IdleWorkers' parameter_type='output' data_type='integer'
+		gui_basic='1' range_type='0' units=''>
+			<control_options>size:8</control_options>
+			<default_value></default_value>
+			<short_description>Idle Worker Processes</short_description>
+			<long_description>Idle Worker Processes</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+		<element name="timer" parameter_type="output" data_type="integer" gui_basic="0"
+			range_type="0" units="ms">
+			<control_options>size:8</control_options>
+			<default_value/>
+			<short_description>Response time</short_description>
+			<long_description>Response time in ms</long_description>
+			<validation_rule/>
+			<error_message/>
+			<gui_type>
+				<integer/>
+			</gui_type>
+		</element>
+	</elements>
+	<help>When running a custom script check, note that the second parameter is always the name of the assigned host.
+	The script that's executed should output each variable on it's own line, otherwise up.time won't be able to capture the appropriate information.</help>
+</uptime>
