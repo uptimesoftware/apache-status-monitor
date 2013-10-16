@@ -7,17 +7,17 @@ See http://uptimesoftware.github.io for more information.
 
 ### Category
 
-{ page.category }}
+plugin
 
 ### Version Compatibility
 
 
   
-    * Apache Status Monitor 3.1 - 7.1, 7.0
+* Apache Status Monitor 3.1 - 7.1, 7.0
   
 
   
-    * Apache Status Monitor 3.0 - 6.0, 5.5, 5.4, 5.3, 5.2
+* Apache Status Monitor 3.0 - 6.0, 5.5, 5.4, 5.3, 5.2
   
 
 
@@ -55,12 +55,35 @@ Allow from 66.241.134.174</p>
 
 
 ### Input Variables
-* Apache Port* URL (/server-status)
+
+* Apache Port
+
+* URL (/server-status)
+
 
 ### Output Variables
 
-* Total Accesses Since Daemon Restart* Total kBytes Since Daemon Restart* Uptime for the HTTP Daemon* Requests Per Second* Bytes Served Per Second* Bytes Served Per Request* Busy Worker Processes* Idle Worker Processes
+
+* Total Accesses Since Daemon Restart
+
+* Total kBytes Since Daemon Restart
+
+* Uptime for the HTTP Daemon
+
+* Requests Per Second
+
+* Bytes Served Per Second
+
+* Bytes Served Per Request
+
+* Busy Worker Processes
+
+* Idle Worker Processes
+
 
 ### Languages Used
-* Shell/Batch* PHP
+
+* Shell/Batch
+
+* PHP
 
