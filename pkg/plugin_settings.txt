@@ -1,8 +1,0 @@
-name=Apache Status Monitor
-version=3.1
-platforms=windows linux solaris
-description=Connects to the MOD-STATUS page in the Apache Webserver to return valuable metrics.
-requiresAgentScript=false
-restartCore=false
-onUpgradeRemoveFiles=true
-onUpgradeRemoveMonitors=false
