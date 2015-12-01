@@ -11,11 +11,9 @@ plugin
 
 ### Version Compatibility
 
-
+* Apache Status Monitor 4.0 - 7.2, 7.3, 7.4, 7.5, 7.6
   
 * Apache Status Monitor 3.1 - 7.1, 7.0
-  
-
   
 * Apache Status Monitor 3.0 - 6.0, 5.5, 5.4, 5.3, 5.2
   
@@ -27,7 +25,7 @@ Retrieves the "MOD-STATUS" from Apache into monitored metrics. See here for more
 
 ### Supported Monitoring Stations
 
-7.1, 7.0
+7.1, 7.0, 7.2, 7.3, 7.4, 7.5, 7.6
 
 ### Supported Agents
 None; no agent required
