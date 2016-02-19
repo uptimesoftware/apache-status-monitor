@@ -6,7 +6,7 @@
     <category>Applications - Web Services</category>
     <category_related>Network Service Monitors</category_related>
     <grid_info>
-        <supported_versions>7.3,7.4,7.5,7.6,7.7</supported_versions>
+        <supported_versions>7.3,7.4,7.5,7.6</supported_versions>
         <supported_platforms>windows, linux</supported_platforms>
         <upgrade_in_place>true</upgrade_in_place>
         <requires_agent_scripts>false</requires_agent_scripts>
@@ -71,7 +71,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Total Accesses Since Daemon Restart</short_description>
 			<long_description>Total Accesses Since Daemon Restart</long_description>
 			<validation_rule/>
@@ -84,7 +83,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Total kBytes Since Daemon Restart</short_description>
 			<long_description>Total kBytes Since Daemon Restart</long_description>
 			<validation_rule/>
@@ -97,7 +95,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>CPU Load incurred by HTTP Daemon</short_description>
 			<long_description>CPU Load incurred HTTP Daemon</long_description>
 			<validation_rule/>
@@ -110,7 +107,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Uptime for the HTTP Daemon</short_description>
 			<long_description>Uptime for the HTTP Daemon</long_description>
 			<validation_rule/>
@@ -123,7 +119,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Requests Per Second</short_description>
 			<long_description>Requests Per Second</long_description>
 			<validation_rule/>
@@ -136,7 +131,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Bytes Served Per Second</short_description>
 			<long_description>Bytes Served Per Second</long_description>
 			<validation_rule/>
@@ -149,7 +143,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Bytes Served Per Request</short_description>
 			<long_description>Bytes Served Per Request</long_description>
 			<validation_rule/>
@@ -162,7 +155,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Busy Worker Processes</short_description>
 			<long_description>Busy Worker Processes</long_description>
 			<validation_rule/>
@@ -175,7 +167,6 @@
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
-			<default_comp_rule>4|4</default_comp_rule>
 			<short_description>Idle Worker Processes</short_description>
 			<long_description>Idle Worker Processes</long_description>
 			<validation_rule/>
@@ -187,8 +178,7 @@
 		<element name="timer" parameter_type="output" data_type="integer" gui_basic="0"
 			range_type="0" units="ms">
 			<control_options>size:8</control_options>
-			<default_value>200|1000</default_value>
-			<default_comp_rule>4|4</default_comp_rule>
+			<default_value/>
 			<short_description>Response time</short_description>
 			<long_description>Response time in ms</long_description>
 			<validation_rule/>
