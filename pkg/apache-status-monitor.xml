@@ -67,7 +67,7 @@
 		
 		
 		
-		<element name='TotalAccesses' parameter_type='output' data_type='integer'
+		<element name='TotalAccesses' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -79,7 +79,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='TotalkBytes' parameter_type='output' data_type='integer'
+		<element name='TotalkBytes' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -91,7 +91,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='CPULoad' parameter_type='output' data_type='integer'
+		<element name='CPULoad' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -103,7 +103,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='Uptime' parameter_type='output' data_type='integer'
+		<element name='Uptime' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -115,7 +115,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='ReqPerSec' parameter_type='output' data_type='integer'
+		<element name='ReqPerSec' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -127,7 +127,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='BytesPerSec' parameter_type='output' data_type='integer'
+		<element name='BytesPerSec' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -139,7 +139,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='BytesPerReq' parameter_type='output' data_type='integer'
+		<element name='BytesPerReq' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -151,7 +151,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='BusyWorkers' parameter_type='output' data_type='integer'
+		<element name='BusyWorkers' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
@@ -163,7 +163,7 @@
 				<integer/>
 			</gui_type>
 		</element>
-		<element name='IdleWorkers' parameter_type='output' data_type='integer'
+		<element name='IdleWorkers' parameter_type='output' data_type='decimal'
 		gui_basic='1' range_type='0' units=''>
 			<control_options>size:8</control_options>
 			<default_value></default_value>
