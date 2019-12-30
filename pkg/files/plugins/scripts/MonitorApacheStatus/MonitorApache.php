@@ -43,7 +43,7 @@ $apache_status_output = file_get_contents( trim($status_url) );
 		$ut_status_output = "";
 		//output = sizeof($arrayOutput);
 		//iterate through and rebuild this thing no need to strip out the scoreboard uptime won't pick it up because it won't be part of the definition
-		for ($i = 0; $i < 9; $i++){
+		for ($i = 0; $i < 37; $i++){
 			$ut_status_output = trim($ut_status_output) . " " . $arrayOutput[$i];
 		}
 		
